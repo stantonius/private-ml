@@ -1,0 +1,30 @@
+# OpenMined - Foundations of Private Computation
+
+Traditional ML requires data pulled to a centralised server - where ownership of data is lost.
+
+**Federated Learning**: train ML on data that the owner **does not share, transfer, or expose**
+
+There are two types of Federated Learning: 
+1. Cross-device
+  * A base model is uploaded to a central server. The model is downloaded onto each device, is client-side trained, and **only the model weights** are returned to the central server
+  * The model is then trained on local data, and if the model is not satisfactory, the model is sent back out for the process to be repeated
+  * Again, data never leaves the devices
+2. Cross-silo
+  * Institutions each contribute their data (think hospitals and medical records)
+
+Advantages of Federated Learning:
+* Data never leaves the device
+* Computation cost is actually lower
+* Improved battery life on end devices
+* End devices can perform inference offline - they already have the model downloaded
+
+**Federated Analytics**: the practice of applying **data science** methods on data stored remotely and securely on user's devices. Only the aggregated data is passed back to the data scientists
+
+**PySyft**: tool that allows you to perform ML using classic tools (ie Pytorch) on data you do not own and cannot see
+
+**Duet**: fascilitates peer-to-peer (P2P) connections that allow sharing of recources without relying on centralised server
+  * The data owner makes the decision on how much access to give the data scientist, including what data can be downloaded
+
+
+
+
